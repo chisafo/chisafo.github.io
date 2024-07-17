@@ -3,18 +3,21 @@ window.onbeforeunload = function() {
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry => {
-        console.log(entry)
+    entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
+            const fishImage = entry.target.dataset.fish;
+            if (fishImage) {
+                const fishElement = entry.target.querySelector('.fish');
+                if (fishElement) {
+                    fishElement.style.backgroundImage = `url(${fishImage})`;
+                }
+            }
         } else {
             entry.target.classList.remove('show');
         }
-    }))
-})
+    });
+});
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
-
-
-
