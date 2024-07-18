@@ -7,7 +7,7 @@ const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-            const fishImage = entry.target.dataset.fish;
+            const fishImage = entry.target.data-fish;
             if (fishImage) {
                 const fishElement = entry.target.querySelector('.fish');
                 if (fishElement) {
