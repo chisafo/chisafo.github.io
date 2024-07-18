@@ -55,7 +55,7 @@ section5 {
     top: 50%;
     left: -100px; /* Start off-screen */
     transform: translateY(-50%);
-    animation: swim 10s linear infinite;
+    animation: swimleft 10s linear infinite;
 }
 .fish2 {
     
@@ -65,16 +65,24 @@ section5 {
     background-size: contain;
     position: fixed;
     top: 50%;
-    left: -100px; /* Start off-screen */
+    right: -100px; /* Start off-screen */
     transform: translateY(-50%);
-    animation: swim 10s linear infinite;
+    animation: swimRight 10s linear infinite;
 }
-@keyframes swim {
+@keyframes swimleft {
     0% {
         left: 0px;
     }
     100% {
         left: 100%;
+    }
+}
+@keyframes swimRight {
+    0% {
+        right: 0px;
+    }
+    100% {
+        right: 100%;
     }
 }
 .content {
