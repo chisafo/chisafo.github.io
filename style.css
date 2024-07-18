@@ -48,16 +48,16 @@ section5 {
     background-size: contain;
     position: fixed;
     top: 50%;
-    left: 0px; /* Start off-screen */
+    right: -100px; /* Start off-screen */
     transform: translateY(-50%);
     animation: swim 10s linear infinite;
 }
 @keyframes swim {
     0% {
-        left: -100px;
+        right: -100px;
     }
     100% {
-        left: 100%;
+        right: 100%;
     }
 }
 .content {
