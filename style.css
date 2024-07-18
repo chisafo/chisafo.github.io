@@ -15,23 +15,47 @@ p {
     text-align: center;
     z-index: 2;
 }
-section, section1, section2, section3, section4, section5 {
+section { 
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 100vh;
+    padding-bottom: 50vh;
+    padding-top: 50vh;
+}
+section1{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-bottom: 200vh;
+
 }
 section2 {
-    min-height: 400vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-bottom: 350vh;
+    padding-top: 50vh;
 }
 section3 {
-    min-height: 1200vh;
+    padding-top: 50vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-bottom: 1150vh;
 }
 section4 {
-    min-height: 900vh;
+    padding-top: 50vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-bottom: 850vh;
 }
 section5 {
-    min-height: 1300vh;
+    padding-top: 50vh;
+    display: grid;
+    place-items: center;
+    align-content: center;
+    padding-bottom: 1250vh;
 }
 .hidden {
     opacity: 0;
@@ -52,7 +76,7 @@ section5 {
     background: url('Clownfish.svg') no-repeat center center;
     background-size: contain;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: -100px; /* Start off-screen */
     transform: translateY(-50%);
     animation: swimleft 10s linear infinite;
@@ -66,7 +90,9 @@ section5 {
     position: fixed;
     top: 50%;
     right: -100px; /* Start off-screen */
+
     transform: translateY(-50%);
+
     animation: swimRight 10s linear infinite;
 }
 @keyframes swimleft {
