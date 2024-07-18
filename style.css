@@ -41,10 +41,27 @@ section5 {
     opacity: 1;
     transition: all 1.5s;
 }
+
+
+
+
 .fish {
+    
     width: 100px;
     height: 50px;
     background: url('Clownfish.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 50%;
+    left: -100px; /* Start off-screen */
+    transform: translateY(-50%);
+    animation: swim 10s linear infinite;
+}
+.fish2 {
+    
+    width: 100px;
+    height: 50px;
+    background: url('polarBear.svg') no-repeat center center;
     background-size: contain;
     position: fixed;
     top: 50%;
