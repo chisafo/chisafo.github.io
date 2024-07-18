@@ -15,14 +15,16 @@ p {
     text-align: center;
     z-index: 2;
 }
+
 section { 
     display: grid;
     place-items: center;
     align-content: center;
-    padding-bottom: 50vh;
+    padding-bottom: 130vh;
     padding-top: 50vh;
 }
 section1{
+    padding-top: 70vh;
     display: grid;
     place-items: center;
     align-content: center;
@@ -59,7 +61,7 @@ section5 {
 }
 .hidden {
     opacity: 0;
-    transition: all 1.5s;
+    transition: all 1s;
 }
 .show {
     opacity: 1;
@@ -67,9 +69,52 @@ section5 {
 }
 
 
+.cloud1{
+    width: 300px;
+    height: 150px;
+    background: url('ctest.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 10%;
+    left: -300px; /* Start off-screen */
+    transform: translateY(-50%);
+    animation: swimleft 11s linear infinite;
+}
+.cloud2{
+    width: 300px;
+    height: 150px;
+    background: url('ctest.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 20%;
+    right: -300px; /* Start off-screen */
+    transform: translateY(-20%);
+    animation: swimRight 13s linear infinite;
+}
+.cloud3{
+    width: 300px;
+    height: 150px;
+    background: url('ctest.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 5%;
+    right: -800px; /* Start off-screen */
+    transform: translateY(-5%);
+    animation: swimRight 23s linear infinite;
+}
+.cloud4{
+    width: 300px;
+    height: 150px;
+    background: url('ctest.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 27%;
+    left: -300px; /* Start off-screen */
+    transform: translateY(-50%);
+    animation: swimleft 17s linear infinite;
+}
 
-
-.fish {
+.clownfish {
     
     width: 100px;
     height: 50px;
@@ -81,7 +126,7 @@ section5 {
     transform: translateY(-50%);
     animation: swimleft 10s linear infinite;
 }
-.fish2 {
+.polarbear {
     
     width: 100px;
     height: 50px;
@@ -94,6 +139,32 @@ section5 {
     transform: translateY(-50%);
 
     animation: swimRight 10s linear infinite;
+}
+.crab {
+    
+    width: 100px;
+    height: 50px;
+    background: url('Crab.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 10%;
+    right: -100px; /* Start off-screen */
+
+    transform: translateY(-50%);
+
+    animation: swimRight 10s linear infinite;
+}
+.goblinshark {
+    
+    width: 100px;
+    height: 50px;
+    background: url('GoblinShark.svg') no-repeat center center;
+    background-size: contain;
+    position: fixed;
+    top: 30%;
+    left: -100px; /* Start off-screen */
+    transform: translateY(-50%);
+    animation: swimleft 10s linear infinite;
 }
 @keyframes swimleft {
     0% {
@@ -116,3 +187,16 @@ section5 {
     font-size: 24px;
     z-index: -1;
 }
+.footer {
+    position: relative;
+
+    padding: 2rem;
+    background: #e0c067;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }
+  
